@@ -80,6 +80,15 @@ number.addEventListener('keyup', (e) => {
 })
 
 engNumber.addEventListener('keyup', e => {
+    if (e.key === '1') audio1.play()
+    if (e.key === '2') audio2.play()
+    if (e.key === '3') audio3.play()
+    if (e.key === '4') audio4.play()
+    if (e.key === '5') audio5.play()
+    if (e.key === '6') audio6.play()
+    if (e.key === '7') audio7.play()
+    if (e.key === '8') audio8.play()
+    if (e.key === '9') audio9.play()
     const engNum = document.getElementById('engNum')
     let numValue = engNumber.value
 
