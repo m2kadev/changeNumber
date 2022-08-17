@@ -4,7 +4,7 @@ let changeMmToEngNum = (num) => {
     let x = ''
     let strTestNum = num.split('')
     
-    for (let i = 0; i < mmNum.length; i++) {
+    for (let i = 0; i < strTestNum.length; i++) {
         for (let ii = 0; ii < mmNum.length; ii++) {
             if (strTestNum[i] === mmNum[ii]) {
                 x += ii
@@ -21,7 +21,7 @@ let changeEngToMmNum = (num) => {
     const mmNum = ['၀', '၁', '၂', '၃', '၄', '၅', '၆', '၇', '၈', '၉']
     let x = ''
 
-    if(typeof(num) === NaN) {
+    if (typeof(num) === NaN) {
         return
     } else {
         num = String(num)
@@ -29,7 +29,7 @@ let changeEngToMmNum = (num) => {
 
     let strTestNum = num.split('')
 
-    for (let i = 0; i < mmNum.length; i++) {
+    for (let i = 0; i < strTestNum.length; i++) {
         for (let ii = 0; ii < mmNum.length; ii++) {
             if (strTestNum[i] == ii) {
                 x += mmNum[ii]
@@ -58,7 +58,7 @@ window.addEventListener('load', () => {
     number.focus()
 })
 
-number.addEventListener('keyup', (e) => {
+number.addEventListener('keyup', e => {
     if (e.key === '1') audio1.play()
     if (e.key === '2') audio2.play()
     if (e.key === '3') audio3.play()
